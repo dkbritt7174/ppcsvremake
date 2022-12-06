@@ -5,7 +5,8 @@ import sys
 import csv
 import time
 from pyprimesieve import primes
-
+import numba
+import numpy as np
 
 __copyright__ = "Copyright (C) 10-28-2018 David Kevin Britt"
 __license__ = "GPL 3.1"
@@ -28,9 +29,8 @@ __status__ = "Production"
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-
+@numba.njit
 def main():
-
     """
 Usage: python ppcsv.py (N) where N is the upper limit.
 For Example python ppcsv.py 10000   Primes found in primelist.csv
@@ -46,6 +46,8 @@ limit_max = sys.argv[1]
 csvprime_list = [primes(int(limit_max))]
 start_time = time.perf_counter()
 
+
+
 # If you wish to print to screen, uncomment next line.
 # print(csvprime_list)
 
@@ -57,6 +59,7 @@ if run_time < 1000:
     print('\n', run_time, ' milliseconds')
 else:
     print('\n', run_time / 1000, ' seconds')
+SystemExit()
 
 if __name__ == "__main__":
     main()
