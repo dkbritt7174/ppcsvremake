@@ -5,15 +5,13 @@ import sys
 import csv
 import time
 from pyprimesieve import primes
-import numba
-import numpy as np
 
-__copyright__ = "Copyright (C) 10-28-2018 David Kevin Britt"
+__copyright__ = "Copyright (C) 12-5-2022 David Kevin Britt"
 __license__ = "GPL 3.1"
 __version__ = "1.1.1"
 __maintainer__ = "David Kevin Britt"
-__email__ = "dkbritt64118@gmail.com"
-__status__ = "Production"
+__email__ = "dkbritt7174@gmail.com"
+__status__ = "Release"
 
 
 #    This program is free software and can be edited and modified.
@@ -29,7 +27,6 @@ __status__ = "Production"
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-@numba.njit
 def main():
     """
 Usage: python ppcsv.py (N) where N is the upper limit.
