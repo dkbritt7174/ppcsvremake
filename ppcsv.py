@@ -6,12 +6,12 @@ import csv
 import time
 from pyprimesieve import primes
 
-__copyright__ = "Copyright (C) 12-5-2022 David Kevin Britt"
+__copyright__ = "Copyright (C) 10-28-2018 David Kevin Britt"
 __license__ = "GPL 3.1"
 __version__ = "1.1.1"
 __maintainer__ = "David Kevin Britt"
-__email__ = "dkbritt7174@gmail.com"
-__status__ = "Release"
+__email__ = "dkbritt64118@gmail.com"
+__status__ = "Production"
 
 
 #    This program is free software and can be edited and modified.
@@ -42,8 +42,6 @@ except IndexError:
 limit_max = sys.argv[1]
 csvprime_list = [primes(int(limit_max))]
 start_time = time.perf_counter()
-
-
 
 # If you wish to print to screen, uncomment next line.
 # print(csvprime_list)
