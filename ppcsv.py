@@ -1,16 +1,19 @@
 # !/usr/bin/python
-# - * -coding: utf - 8 - * -
+
+"""
+    Prime Number Finder
+"""
 
 import sys
 import csv
 import time
-from pyprimesieve import primes
+import pyprimesieve
 
-__copyright__ = "Copyright (C) 10-28-2018 David Kevin Britt"
+__copyright__ = "Copyright (C) 09-7-2023 David Kevin Britt"
 __license__ = "GPL 3.1"
 __version__ = "1.1.1"
 __maintainer__ = "David Kevin Britt"
-__email__ = "dkbritt64118@gmail.com"
+__email__ = "dkbritt7174@gmail.com"
 __status__ = "Production"
 
 
@@ -36,18 +39,18 @@ def main():
 
 
 try:
-    limit_max = sys.argv[1]
+    LIMIT_MAX = sys.argv[1]
 except IndexError:
     print(main.__doc__)
 
-limit_max = sys.argv[1]
-csvprime_list = [primes(int(limit_max))]
+LIMIT_MAX = sys.argv[1]
+csvprime_list = [pyprimesieve.primes(int(LIMIT_MAX))]
 start_time = time.perf_counter()
 
 # If you wish to print to screen, uncomment next line.
 # print(csvprime_list)
 
-with open("primelist.csv", "w", 1000000000) as file_iter:
+with open("primelist.csv", "w", 1000000000, encoding='UTF-8') as file_iter:
     writer = csv.writer(file_iter)
     writer.writerows(csvprime_list)
 run_time = (time.perf_counter() - start_time) * 1000
@@ -55,7 +58,6 @@ if run_time < 1000:
     print("\n", run_time, " milliseconds")
 else:
     print("\n", run_time / 1000, " seconds")
-SystemExit()
 
 if __name__ == "__main__":
     main()
