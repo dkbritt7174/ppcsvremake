@@ -8,6 +8,7 @@ import sys
 import time
 import pyprimesieve
 
+
 __copyright__ = "Copyright (C) 09-7-2023 David Kevin Britt"
 __license__ = "GPL 3.1"
 __version__ = "1.1.1"
@@ -28,7 +29,6 @@ __status__ = "Production"
 #
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
 
 def main():
     """
