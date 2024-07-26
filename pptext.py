@@ -9,7 +9,7 @@ import time
 import pyprimesieve
 
 
-__copyright__ = "Copyright (C) 09-7-2023 David Kevin Britt"
+__copyright__ = "Copyright (C) 9-7-2023 David Kevin Britt"
 __license__ = "GPL 3.1"
 __version__ = "2.0"
 __maintainer__ = "David Kevin Britt"
