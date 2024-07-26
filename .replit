@@ -1,0 +1,8 @@
+modules = ["python-3.10"]
+run = "python3 pptext.py 1000000"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "python3 pptext.py 1000000"]
