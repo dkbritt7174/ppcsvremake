@@ -8,9 +8,18 @@ import time
 import pyprimesieve
 
 
+<<<<<<< HEAD
 
 print('\nUsage: python ppcsv.py (N) where N is the upper limit')
 print('\nFor Example python ppcsv.py 10000\nPrimes found in primelist.txt\n','\n')
+=======
+__copyright__ = "Copyright (C) 9-7-2023 David Kevin Britt"
+__license__ = "GPL 3.1"
+__version__ = "2.0"
+__maintainer__ = "David Kevin Britt"
+__email__ = "dkbritt7174@gmail.com"
+__status__ = "Production"
+>>>>>>> 5fcc692ed9567c3c737cccae36fc56ef9c84d109
 
 
 def main():
