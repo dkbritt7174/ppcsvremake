@@ -9,12 +9,18 @@ import time
 import pyprimesieve
 
 
+<<<<<<< HEAD
 __copyright__ = "Copyright (C) 9-7-2023 David Kevin Britt"
 __license__ = "GPL 3.1"
 __version__ = "2.0"
 __maintainer__ = "David Kevin Britt"
 __email__ = "dkbritt7174@gmail.com"
 __status__ = "Production"
+=======
+
+print('\nUsage: python ppcsv.py (N) where N is the upper limit')
+print('\nFor Example python ppcsv.py 10000\nPrimes found in primelist.txt\n','\n')
+>>>>>>> parent of 8043a81 (Merge branch 'UpdatedforReplit' of https://github.com/dkbritt7174/ppcsvremake into UpdatedforReplit)
 
 
 def main():
