@@ -37,6 +37,8 @@ start_time = time.perf_counter()
 with open('primelist.txt', 'w', encoding='utf8') as fp:
     for item in csvprime_list:
         fp.write(str(item))
+        
+print(len(item),' Primes found')
 
 run_time = (time.perf_counter() - start_time) * 1000
 if run_time < 1000:
